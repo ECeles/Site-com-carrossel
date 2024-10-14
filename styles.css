@@ -103,3 +103,58 @@ header a {
   color: #000;
   transition: 1.5s;
 }
+
+.container .thumb {
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  display: flex;
+  gap: 20px;
+}
+
+.container .thumb .thumb-item {
+  width: 135px;
+  height: 200px;
+  position: relative;
+}
+
+.container .thumb .thumb-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  filter: brightness(80%);
+}
+
+.container .thumb .contentThumb {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+
+.arrows {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: absolute;
+  bottom: 120px;
+  left: 125px;
+  width: 300px;
+}
+
+.arrows button {
+  border-radius: 10px;
+  border: none;
+  padding: 12px 17px;
+  background-color: #eee4;
+  color: #eee;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 1.5em;
+}
+
+.arrows button:hover {
+  background-color: #eee;
+  color: #000;
+  transition: 0.7s;
+}
