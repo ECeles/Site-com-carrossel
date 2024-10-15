@@ -185,6 +185,19 @@ header a {
   }
 }
 
+/* Movimento primeira Thumb */
+
+.container.back .thumb .thumbItems:nth-child(1) {
+  animation: effectFirstThumb 0.5s linear 1 forwards;
+}
+
+@keyframes effectFirstThumb {
+  from {
+    width: 0;
+    opacity: 0;
+  }
+}
+
 /* Textos principais*/
 
 .container .list .listItems:nth-last-child(1) .content .title,
