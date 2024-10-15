@@ -58,7 +58,7 @@ header a {
   text-shadow: 0 5px 10px #0004;
 }
 
-.container .list .listItes .title {
+.container .list .listItems .title {
   font-size: 5em;
   font-weight: 700;
   line-height: 1.3em;
@@ -157,4 +157,60 @@ header a {
   background-color: #eee;
   color: #000;
   transition: 0.7s;
+}
+
+/* Movimento da Thumb */
+
+.container.next .thumb {
+  animation: effectNextThumb 0.5s linear 1 forwards;
+}
+
+@keyframes effectNextThumb {
+  from {
+    transform: translateX(150px);
+  }
+}
+
+/* Movimento última Thumb */
+
+.container.next .thumb .thumbItems:nth-last-child(1) {
+  animation: effectLastThumb 0.5s linear 1 forwards;
+}
+
+@keyframes effectLastThumb {
+  from {
+    width: 0;
+    opacity: 0;
+  }
+}
+
+/* Textos principais*/
+
+.container .list .listItems:nth-last-child(1) .content .title,
+.container .list .listItems:nth-last-child(1) .content .description,
+.container .list .listItems:nth-last-child(1) .content .buttons {
+  transform: translateY(50px);
+  filter: blur(20px);
+  opacity: 0;
+  animation: showContent 0.5s linear 1 forwards;
+}
+
+@keyframes showContent {
+  to {
+    transform: translateY(0);
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+
+.container .list .listItems:nth-last-child(1) .content .title {
+  animation-delay: 1.2s;
+}
+
+.container .list .listItems:nth-last-child(1) .content .description {
+  animation-delay: 1.6s;
+}
+
+.container .list .listItems:nth-last-child(1) .content .buttons {
+  animation-delay: 2s;
 }
