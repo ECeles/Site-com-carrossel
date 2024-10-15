@@ -35,20 +35,20 @@ header a {
   overflow: hidden;
 }
 
-.container .list .list-item {
+.container .list .listItems {
   width: 100%;
   height: 100%;
   position: absolute;
 }
 
-.container .list .list-item img {
+.container .list .listItems img {
   object-fit: cover;
   width: 100%;
   height: 100%;
   filter: brightness(50%);
 }
 
-.container .list .list-item .content {
+.container .list .listItems .content {
   position: absolute;
   top: 20%;
   right: 10%;
@@ -58,17 +58,17 @@ header a {
   text-shadow: 0 5px 10px #0004;
 }
 
-.container .list .list-item .title {
+.container .list .listItes .title {
   font-size: 5em;
   font-weight: 700;
   line-height: 1.3em;
 }
 
-.container .list .list-item .description {
+.container .list .listItems .description {
   font-size: 1.5em;
 }
 
-.container .list .list-item .buttons {
+.container .list .listItems .buttons {
   display: grid;
   grid-template-columns: repeat(2, 130px);
   grid-template-rows: 40px;
@@ -76,7 +76,7 @@ header a {
   gap: 5px;
 }
 
-.container .list .list-item .buttons button {
+.container .list .listItems .buttons button {
   border: none;
   background-color: #eee;
   letter-spacing: 3px;
@@ -85,20 +85,20 @@ header a {
   text-transform: uppercase;
 }
 
-.container .list .list-item .buttons button:hover {
+.container .list .listItems .buttons button:hover {
   background-color: transparent;
   border: 1px solid #eee;
   color: #eee;
   transition: 0.7s;
 }
 
-.container .list .list-item .buttons button:nth-child(2) {
+.container .list .listItems .buttons button:nth-child(2) {
   background-color: transparent;
   border: 1px solid #eee;
   color: #eee;
 }
 
-.container .list .list-item .buttons button:nth-child(2):hover {
+.container .list .listItems .buttons button:nth-child(2):hover {
   background-color: #eee;
   color: #000;
   transition: 1.5s;
@@ -112,13 +112,13 @@ header a {
   gap: 20px;
 }
 
-.container .thumb .thumb-item {
+.container .thumb .thumbItems {
   width: 135px;
   height: 200px;
   position: relative;
 }
 
-.container .thumb .thumb-item img {
+.container .thumb .thumbItems img {
   width: 100%;
   height: 100%;
   object-fit: cover;
