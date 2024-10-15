@@ -110,6 +110,11 @@ header a {
   left: 50%;
   display: flex;
   gap: 20px;
+  cursor: pointer;
+}
+
+.container .thumb .thumbItems:hover {
+  filter: brightness(50%);
 }
 
 .container .thumb .thumbItems {
