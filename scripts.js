@@ -16,5 +16,7 @@ function moveItemsOnClick(type) {
     list.appendChild(listItems[0]);
     thumb.appendChild(thumbItems[0]);
   } else {
+    list.prepend(listItems[3]);
+    thumb.prepend(thumbItems[3]);
   }
 }
