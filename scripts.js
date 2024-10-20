@@ -1,21 +1,20 @@
-let prevButton = document.getElementById("prev");
-let nextButton = document.getElementById("next");
-let container = document.querySelector(".container");
-let items = container.querySelectorAll(".list .item");
-let indicator = document.querySelector(".indicators");
-let dots = indicator.querySelectorAll("ul li");
-let list = container.querySelector(".list");
+let btnNext = document.querySelector(".next");
+let btnPrev = document.querySelector(".prev");
 
-let active = 0;
-let firstPosition = 0;
-let lastPosition = items.length - 1;
+let container = document.querySelector(".container");
+let list = document.querySelector(".container .list");
+let thumb = document.querySelector(".container .thumb");
+
+//let items = container.querySelectorAll(".list .item");
+//let indicator = document.querySelector(".indicators");
+//let dots = indicator.querySelectorAll("ul li");
 
 btnNext.onclick = () => moveItemsOnClick("next");
-btnBack.onclick = () => moveItemsOnClick("back");
+btnPrev.onclick = () => moveItemsOnClick("prev");
 
 function moveItemsOnClick(type) {
-  let listItems = document.querySelectorAll(".list .listitems");
-  let thumbItems = document.querySelectorAll(".thumb .thumbitems");
+  let listItems = document.querySelectorAll(".list .listItems");
+  let thumbItems = document.querySelectorAll(".thumb .thumbItems");
 
   if (type === "next") {
     list.appendChild(listItems[0]);
@@ -24,4 +23,9 @@ function moveItemsOnClick(type) {
     list.prepend(listItems[listItems.length - 1]);
     thumb.prepend(thumbItems[listItems.length - 1]);
   }
+
+  setTimeout(() => {
+    container.classList.add("next");
+    container.classList.add("prev");
+  }, 2000);
 }
